@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"/>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Pretendard;
+
+            }
+
+            .wrap {
+                width: 400px;
+                height: 390px;
+            }
+
+            .wrap .header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 24px;
+            }
+
+            .wrap .header div {
+                font-size: 25px;
+                font-weight: 700;
+                color: #FF9F0F;
+                margin-top: 14px;
+            }
+
+            .wrap .container {
+                margin-top: 31px;
+            }
+
+            .wrap .container .row {
+                display: flex;
+                font-size: 16px;
+            }
+
+            .wrap .container .row .row_name {
+                background-color: #F4F4F4;
+                font-weight: 400;
+                width: 102px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+                font-size: 16px;
+            }
+
+            .wrap .container .row .row_contents {
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                border-bottom: 1px dashed 
+                #DDDDDD;
+                
+                width: 360px;
+            }
+
+            .wrap button {
+                width: 100%;
+                height: 59px;
+                background-color: #FF9F0F;
+                color: #ffffff;
+                border: #FF9F0F;
+                font-size: 16px;
+                margin-top: 63px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            .bt {
+                border-top: 1px dashed 
+                #DDDDDD;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="header">
+                <img class="check" src="./image/check_circle.png">
+                <div>신청이 완료되었습니다.</div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="row_name">상품명</div>
+                    <div class="row_contents bt">양면폰체인지(RED)</div>
+                </div>
+                <div class="row">
+                    <div class="row_name">핸드폰번호</div>
+                    <div class="row_contents">010-1111-1111</div>
+                </div>
+                <div class="row">
+                    <div class="row_name">이름</div>
+                    <div class="row_contents">홍길동</div>
+                </div>
+            </div>
+            <button>확인</button>
+        </div>
+    </body>
+</html>
